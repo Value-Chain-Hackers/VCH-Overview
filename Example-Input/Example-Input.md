@@ -1,6 +1,6 @@
 ---
 title: 'Slides 1'
-subtitle: 'James Adams'
+subtitle: 'Christiaan Verhoef'
 ---
 
 # Section heading
