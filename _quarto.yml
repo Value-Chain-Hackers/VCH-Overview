@@ -44,7 +44,7 @@ format:
     template: _resources/templates/html.html
     toc: false # turn table of contents on/off
   pptx:
-    reference-doc: _resources/templates/pptx/cosmic-latte.pptx
+    reference-doc: _resources/templates/pptx/classy.pptx
   revealjs:
     theme: _resources/templates/slide-theme.scss
     transition: slide

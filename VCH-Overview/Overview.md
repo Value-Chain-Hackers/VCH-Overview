@@ -6,9 +6,80 @@ format:
   pptx: default
 ---
 
-# Project Overview  
+
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+# Project Overview
+
+<mark>📘 Lessons Learned:</mark>
+
+- Structure matters more than ambition  
+- Constraints reveal priorities  
+- Students need working AI-tools, not systems
+- Students need active support to work with tools, not a workshop.
+- Failures teach if documented  
+- Local infra works, but needs support  
+- Collaboration drives progress
+
+:::
+::: {.column width="50%"}
+
+<mark>🧠 Skills & What’s Working:</mark>
+
+- Full AI stack deployment (OpenWebUI, Qdrant, n8n)  
+- Reproducible R workflows (RStudio, Docker)  
+- Real-use workshops + mentorship  
+- Proposal writing and stakeholder engagement  
+- Active collaborations gaining traction
+
+:::
+::::::::::::::
+
+::: notes
+From trial to traction: this project has turned lessons into systems, failures into frameworks, and ideas into infrastructure.
+:::
+
+
 ## Current Workstreams and Collaborations
 
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+<mark>🔧 Infrastructure:</mark>  
+- VCH LLM stack (OpenWebUI, Qdrant, n8n)  
+- DAT Linux for reproducible setups  
+- Nextcloud for shared docs  
+- RStudio workflows in progress
+
+<mark>📚 Education & Workshops:</mark>  
+- AI workshops based on real failures  
+- Mentoring students with ready-to-use tools  
+- Focus on prompting over building  
+- Toward an AI learning track
+
+:::
+::: {.column width="50%"}
+
+<mark>🌐 R&D:</mark>  
+- Tool testing (Far.AI, AI Scientist)  
+- R-based reproducibility pilots  
+- Mapping AI for research workflows
+
+<mark>🤝 Collaborations:</mark>  
+- AgUnity (Clearroots) Stefan   
+- Thomas Mazuiri (VCH-Infra),
+- Torsten Raudssus (Supplylens), Thomas Dik
+- SCF NICE (grant/pilot)  Luka Westergeest
+
+
+:::
+::::::::::::::
+
+
+::: notes
+This slide shows that we're not just planning — we’re actively building. Technical systems are running, educational content is being delivered, and external partnerships are forming. We’re laying the groundwork for scale, credibility, and cross-disciplinary impact.
+:::
 ---
 
 ## Agenda
@@ -28,55 +99,90 @@ format:
 
 ## 1. VCH Infrastructure – LLM for Students
 
-<mark>Goal:</mark> Enable students to use local LLMs for assignments, feedback, and learning.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark> A local LLM stack lets students perform advanced supply chain research securely and independently, using real data without relying on external cloud services.
+<mark>🎯 Goal:</mark>  
+Enable students to use local LLMs for assignments, feedback, and learning.
 
-<mark>Accomplished:</mark>
-- Fully running OpenWebUI-based LLM environment  
-- Hosted on our own local-controlled server  
+<mark>🔒 Why:</mark>  
+A local LLM stack enables:
+
+- Secure research with real data
+- No reliance on cloud services
+- Independent student experimentation
+
+<mark>✅ Accomplished:</mark>
+
+- Running OpenWebUI-based LLM environment
+- Hosted on a local-controlled server
 - Integrated tools: Qdrant, n8n, pgvector, dashboards
 
-<mark>Now Possible:</mark> We can create automated flows with memory.
+<mark>🧠 Now Possible:</mark>
 
-<mark>Next Steps:</mark>
-- Broader student adoption  
-- Classroom integration  
-- Develop real use cases
+- Memory-enabled AI workflows
 
-<mark>Help Needed:</mark>
-- Budget for <mark>TOKENS</mark> so we can run large models  
-- Current costs are being covered personally  
-- Time allocation is needed to maintain and grow the stack  
-- Confirmation that this is a supported, strategic direction
+More info: 
+- [VCH-Infra](https://github.com/Value-Chain-Hackers/VCH-Infra)
+
+:::
+::: {.column width="50%"}
+
+<mark>🚀 Next Steps:</mark>
+
+- Broader student adoption
+- Classroom integration
+- Real use case development
+
+<mark>🆘 Help Needed:</mark>
+
+- Budget for <mark>TOKENS</mark> to run larger models
+- Personal costs are unsustainable
+- Need focused hours to maintain and improve
+- Requesting support and validation of direction
+
+:::
+::::::::::::::
 
 ::: notes
 This project lays the technical foundation for responsible student-AI interaction. It reduces reliance on cloud services and enables advanced, privacy-safe research workflows. With a small investment, we can turn this into a standard part of classroom education.
 :::
-
 ---
 
 ## 2. VCH Infrastructure – General Tools
 
-<mark>Goal:</mark> Provide infrastructure with built-in tools so students can quickly ideate and prototype.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark> A seamless environment helps students move from ideas to experiments without technical barriers.
+<mark>🎯 Goal:</mark>  
+Provide infrastructure with built-in tools so students can quickly ideate and prototype.
 
-<mark>Accomplished:</mark>
-- AI stack fully deployed  
-- Nextcloud environment live  
+<mark>⚙️ Why:</mark>  
+A seamless environment helps students move from ideas to experiments without technical barriers.
+<mark>✅ Accomplished:</mark>
+
+- AI stack fully deployed
+- Nextcloud environment live
 - DAT Linux system in full testing
 
-<mark>Next Steps:</mark>
-- Integrate AI tools more tightly with the DAT Linux OS  
-- Enable AI-enhanced features inside Nextcloud  
-- Launch a Nextcloud-based documentation server
+:::
+::: {.column width="50%"}
 
-<mark>Help Needed:</mark>
-- Hands-on testing of all tools and automations  
-- Feedback on what’s missing or broken  
-- I need *hours* to improve reliability  
-- I need support to validate that this infrastructure path makes sense
+<mark>🚀 Next Steps:</mark>
+
+- Tighter integration of AI tools with DAT Linux
+- Enable AI features inside Nextcloud
+- Launch a documentation server using Nextcloud
+
+<mark>🆘 Help Needed:</mark>
+
+- Hands-on testing of tools and flows
+- Feedback on missing functionality
+- Time to improve reliability
+- Support to validate that this is the right direction
+
+:::
+::::::::::::::
 
 ::: notes
 This setup is about lowering the threshold for student experimentation. We now have a local cloud, open AI tools, and a Linux-based desktop system under one roof. With testing and refinement, this becomes a plug-and-play environment for future student-driven supply chain solutions.
@@ -86,227 +192,366 @@ This setup is about lowering the threshold for student experimentation. We now h
 
 ## 3. VCH Infrastructure – Reproducible Research (incl. DAT Linux)
 
-<mark>Goal:</mark> Enable researchers to build, test, and share repeatable experiments — including data, code, and results.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark> This supports frictionless academic collaboration:  
-- Reproduce prior research  
-- Run simulations  
-- Build openly on each other’s work  
-AI has narrow, specific uses in research — but reproducibility unlocks real value.
+<mark>🎯 Goal:</mark>  
+Enable researchers to build, test, and share repeatable experiments — including data, code, and results.
 
-<mark>Accomplished:</mark>
-- Full stack is deployable using DAT Linux, Docker, and systemd  
-- RStudio Server tested and running
+<mark>🔍 Why:</mark>
 
-<mark>Next Steps:</mark>
-- Develop integrated research workflows in RStudio  
-- Study and apply data stewardship best practices
+- Reproduce prior research
+- Run simulations
+- Build openly on others' work  
+  AI is most useful in research when workflows are reproducible and verifiable.
 
-<mark>Help Needed:</mark>
-- I need a real past research project to rebuild as a reproducible R workflow  
-- I need *hours* to prototype and document it properly  
-- I need confirmation that this direction aligns with our goals
+<mark>✅ Accomplished:</mark>
+
+- Stack deployable with DAT Linux, Docker, systemd
+- RStudio Server tested and operational
+
+:::
+::: {.column width="50%"}
+
+<mark>🚀 Next Steps:</mark>
+
+- Develop integrated workflows with RStudio
+- Learn and apply data stewardship practices
+
+<mark>🆘 Help Needed:</mark>
+
+- A real past project to rebuild and reproduce in R
+- Time to prototype and document workflows
+- Support to ensure this path aligns with our research goals
+
+:::
+::::::::::::::
 
 ::: notes
 This is about making research replicable, auditable, and extensible. With this setup, students and researchers can package their work in a form that others can immediately reuse or rerun. It’s a key step toward making our lab academically credible and open-source ready.
 :::
+More info: 
+- [VCH-Infra](https://github.com/Value-Chain-Hackers/VCH-Datasharing)
+
 
 ---
 
 ## 4. Practical AI Use Cases & Workshops
 
-<mark>Goal:</mark> Teach students how to use AI tools effectively, with a focus on real-world limitations.
 
-<mark>Why:</mark>  
-AI is massively overhyped. In reality:
-- It makes frequent mistakes  
-- Lacks reasoning and context awareness  
-- Struggles with memory, coherence, and truthfulness  
-Students must understand how to test, verify, and contain AI — not blindly trust it.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Accomplished:</mark>
-- Workshop repository created  
-- First sessions completed  
-- Practical failures (e.g. Knopenkoning, Inchainge) revealed major AI limitations
+<mark>🎯 Goal:</mark>  
+Teach students how to use AI tools effectively — with a clear understanding of their limitations.
 
-<mark>Next Steps:</mark>
-- Translate IBM-based workshop into applied, real-world format  
-- Teach data translation: from models to operational reality  
-- Embed these lessons into ongoing workshop series
+<mark>⚠️ Why:</mark>  
+AI is overhyped. In practice:
 
-<mark>Help Needed:</mark>
-- Manpower: integration engineers, network engineers, workshop co-builders  
-- Testers to challenge tools and give feedback  
-- Regular, scheduled workshops and hands-on AI meetups
+- It makes mistakes
+- Lacks reasoning and contextual awareness
+- Struggles with memory and coherence  
+  Students must learn to test, verify, and control AI systems — not blindly trust them.
 
-::: notes
-This project is about critical thinking. We’re not selling AI — we’re building fluency in when and how to use it. These workshops teach students to confront the gap between theoretical AI performance and actual system behavior. That’s where deep learning happens — and where trust is earned.
+<mark>✅ Accomplished:</mark>
+
+- Workshop repo created
+- First sessions delivered
+- Failures (e.g. Knopenkoning, Inchainge) revealed limitations
+
 :::
+::: {.column width="50%"}
 
+<mark>🚀 Next Steps:</mark>
+
+- Translate IBM-based workshop into practical applications
+- Teach "data-to-reality" thinking
+- Run an ongoing workshop series with feedback loops
+
+<mark>🆘 Help Needed:</mark>
+
+- Integration and network engineers
+- Students and testers to challenge tools
+- Regular AI meetups and testing sessions
+- Hands-on collaborators to co-build use cases
+
+:::
+::::::::::::::
 ---
 
 ## 5. AI-Supported Student Projects
+Examples: 
+- [VCH-Lithium](https://value-chain-hackers.github.io/LiCycle-AI/)
+- [VCH-BCM](https://github.com/Value-Chain-Hackers/LiCycle-AI)
 
-<mark>Goal:</mark> Support student-led projects by giving them access to AI tools that just work — instead of expecting them to build or understand AI infrastructure from scratch.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark>  
-As Maxime correctly pointed out, most students are not equipped to build models or flows.  
-Chris worked with "What he had and what he was working with", but that doesnt work;
+<mark>🎯 Goal:</mark>  
+Support student-led projects by giving them AI tools that just work — not expecting them to build infrastructure.
+
+<mark>💡 Why:</mark>  
+As Maxime correctly noted: most students can't build their own AI pipelines.  
 Instead, we:
-- Provide working - End-user faceing tools; not chatbots. 
-- Focus on prompting, saving, processing  
+
+- Provide working, end-user-facing tools (not chatbots)
+- Focus on prompting, saving, and processing
 - Teach integration with commercial and internal systems  
-This approach boosts their real output — it’s more valuable than sandbox experiments.
+  This approach delivers value — not confusion.
 
-<mark>Accomplished:</mark>
-- Built 2 fully working websites and concepts using AI  
-- Far beyond what students could build on their own  
-- Proved that AI mentorship unlocks creativity and output
+<mark>✅ Accomplished:</mark>
 
-<mark>Next Steps:</mark>
-- Showcase project results  
-- Formalize AI mentorship offerings  
-- Identify new student use cases
+- Built 2 functional AI-driven websites
+- Far surpassed what students could do solo
+- Demonstrated how AI mentorship accelerates outcomes
 
-<mark>Help Needed:</mark>
-- **Stop** restricting expert-student interactions — students need direct support to accelerate  
-- **Start** giving token budgets so we can run large models when needed  
-- **Stop** comparing local setups to billion-dollar AI clouds  
-- **Start** allowing external experts to connect with our lab (e.g. via Discord or open sessions)  
-- **Start** recognizing Value Chain Hackers as a serious initiative: give it a KvK, a domain, and a mandate  
-- **Start** giving Chris a dedicated team of IT and business students to build applied AI solutions
-
-::: notes
-This slide is a call to shift from theory to empowerment. Students thrive when given working tools and mentorship. The current model is burning energy on trying to teach what can’t be learned in a crash course. Instead, let's supercharge them — and learn from what breaks.
 :::
+::: {.column width="50%"}
+
+<mark>🚀 Next Steps:</mark>
+
+- Showcase student outcomes
+- Formalize an AI mentorship pathway
+- Identify new use cases with real needs
+
+<mark>🆘 Help Needed:</mark>
+
+- Stop limiting expert-student interaction
+- Start providing token budgets for large model usage
+- Stop comparing this and Chris to OpenAI — that's unrealistic
+- Start letting external experts interface (e.g. via Discord)
+- Start treating Value Chain Hackers as a formal initiative: KvK, domain, mandate
+- Start giving Chris a team of IT + business students to scale AI work
+
+:::
+::::::::::::::
+ 
+---
 
 ## 6. SupplyLens (formerly Knopenkoning)
 
-<mark>Goal:</mark> Visualize complex supply chains using a combination of AI, ESG data, and graph technology.
+Examples: 
+- [VCH-Supplylens](https://github.com/Value-Chain-Hackers/SupplyLens)
+- [Presentation](https://rpubs.com/kamitor/Supplylens23)
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark>  
-- Supports CSRD/CSDDD compliance  
-- Enables risk mapping, transparency, and actionable insights  
-- Real use for real complexity
+<mark>🎯 Goal:</mark>  
+Visualize complex supply chains using AI, ESG data, and graph technology.
 
-<mark>Why Now:</mark>  
-- Lessons learned from previous attempt (Sebastien encounter)  
-- Renewed clarity, realism, and enthusiasm  
-- Ongoing interest from the AI community to contribute  
-- Chris has developed a new, feasible approach
+<mark>📌 Why:</mark>
 
-<mark>Accomplished:</mark>
-- New direction and architecture defined  
-- GitHub + live demo prepared:
-  - [GitHub](https://github.com/Value-Chain-Hackers/SupplyLens)  
-  - [Demo](https://rpubs.com/kamitor/Supplylens23)
+- Supports CSRD/CSDDD compliance
+- Enables supply chain risk mapping
+- Provides actionable insights into real complexity
 
-<mark>Next Steps:</mark>
-- Greenlight to begin ideation  
-- Allocation of focused working hours  
-- Approval to form a dedicated Scrum team
+<mark>⏳ Why Now:</mark>
 
-<mark>Help Needed:</mark>
-- Permission to proceed and bring in trusted external contributors (free) 
-- Split this off from Value Chain Hackers as it's own initiative, with a kvk, domain etc. 
-- Minimal prototype budget (< €5K) for infrastructure and testing  
-- Space to experiment and iterate with a core team, allow chris to work with externals.
+- Lessons learned from previous attempt (Sebastien)
+- Renewed clarity and realistic expectations
+- Strong community interest
+- A grounded, feasible new approach
 
-::: notes
-SupplyLens brings together sustainability, transparency, and AI to address a real need: supply chain visibility. After a difficult first iteration, this new approach is grounded, collaborative, and well-scoped. With a small budget and a bit of trust, we can show fast progress.
+<mark>✅ Accomplished:</mark>
+
+- Architecture and direction redesigned
+- Demo + repo available: 
+  - GitHub
+  - Demo
+
 :::
+::: {.column width="50%"}
 
+<mark>🚀 Next Steps:</mark>
+
+- Greenlight to begin ideation
+- Hours allocated for focused development
+- Permission to form a dedicated Scrum team
+
+<mark>🆘 Help Needed:</mark>
+
+- Approval to bring in trusted external contributors (free)
+- Spin this off as its own initiative (KvK, domain, mandate)
+- Budget (< €5K) for prototyping and infrastructure
+- Space for experimentation with external partners
+
+:::
+::::::::::::::
+
+---
 
 ## 7. Experimental Tool Testing – AI Scientist, Far.AI
 
-<mark>Goal:</mark> Explore emerging AI tools that support scientific workflows — from multi-step reasoning to automated experimentation.
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Why:</mark>  
-- Keep Windesheim connected to the frontier of AI development  
-- Investigate tools that can:  
-  - Automate cyber attack simulation  
-  - Assist in generating PhD-level research  
-  - Handle complex multi-step processing  
-These tools could reshape the way academic research is conducted.
+<mark>🔬 Goal:</mark>  
+Explore cutting-edge AI tools that support scientific workflows — including multi-step reasoning and automated experimentation.
 
-<mark>Accomplished:</mark>
-- Reviewed AI Scientist and Far.AI projects  
-- Identified promising capabilities and applications  
-- Repository bookmarked:  
-  - [GitHub – AI Scientist (aci)](https://github.com/aipotheosis-labs/aci)
+<mark>🌐 Why:</mark>
 
-<mark>Next Steps:</mark>
-- Actively test 3 tools to evaluate research potential  
-- Identify barriers and integration opportunities
+- Keep Windesheim connected to frontier AI developments
+- Investigate tools that can: 
+  - Simulate cyber attacks
+  - Assist in generating PhD-level content
+  - Automate complex reasoning chains  
+    These tools may redefine how we approach research workflows.
 
-<mark>Help Needed:</mark>
-- Token budget required to run and evaluate these tools properly
+<mark>✅ Accomplished:</mark>
+
+- Reviewed AI Scientist and Far.AI initiatives
+- Identified high-potential capabilities
+- Repository bookmarked: 
+  - GitHub – AI Scientist (aci)
+
+:::
+::: {.column width="50%"}
+
+<mark>🚀 Next Steps:</mark>
+
+- Test 3 key tools to assess research potential
+- Identify barriers, limitations, and integration opportunities
+
+<mark>🆘 Help Needed:</mark>
+
+- Budget for tokens to properly test and evaluate the tools
+
+:::
+::::::::::::::
 
 ::: notes
 This initiative keeps us ahead of the curve in research tech. While not production-ready, these experimental tools offer a glimpse into how AI might eventually support fully automated or guided scientific inquiry. We should test now — and decide where to engage deeper.
 :::
 
-
+---
+ 
 ## 8. Project Proposal – ClearRoots
+Examples: 
+- [VCH-ClearRoots](https://github.com/Value-Chain-Hackers/ClearRoots)
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-<mark>Goal:</mark> Build a digital platform to help smallholder cooperatives and EU SME importers comply with EU sustainability laws (CSRD, CSDDD, EUDR).
+<mark>🎯 Goal:</mark>  
+Build a digital platform to help smallholder cooperatives and EU SME importers comply with EU sustainability laws (CSRD, CSDDD, EUDR).
 
-<mark>How It Works:</mark>
-- Cooperatives enter data via a multilingual, offline-capable mobile app  
-- Data is time-stamped and stored on AgUnity’s blockchain for traceability  
-- System guides users through EU-aligned documentation workflows  
-- Importers receive ready-to-submit compliance dossiers for each shipment
+<mark>⚙️ How It Works:</mark>
 
-<mark>Why It Matters:</mark>
-- EU rules now require sustainability documentation that smallholders can’t easily produce  
-- Importers lack practical tools to meet compliance requirements  
-- This platform enables both sides to comply — without exclusion or greenwashing
+- Data collected via a multilingual, offline-capable mobile app
+- Time-stamped data stored on AgUnity’s blockchain
+- App guides users to complete EU-aligned documentation
+- Importers receive ready-to-submit compliance dossiers
 
-<mark>Current Status:</mark>
-- Drafted core logic, roles, and compliance flow  
-- Identified pilot framework and documentation logic  
-- Initial partners: AgUnity, Windesheim, SCF NICE  
-- First pitch deck and 1-pager created
+<mark>📍 Status:</mark>
 
-<mark>Help Needed:</mark>
-- Funding or co-development support to move into implementation  
-- Support turning this into a grant proposal  
-- A grant writer or strategic partner to help secure next steps
+- Core logic and user roles drafted
+- Documentation flow + pilot framework outlined
+- Initial partners: AgUnity, Windesheim, SCF NICE
+- Pitch deck and 1-pager in first draft
+
+:::
+::: {.column width="50%"}
+
+<mark>🌍 Why It Matters:</mark>
+
+- EU laws demand documentation smallholders can’t provide
+- Importers lack accessible tools for compliance
+- This platform bridges the gap — without exclusion or greenwashing
+
+<mark>🆘 Help Needed:</mark>
+
+- Funding or co-development support
+- Help turning this into a grant proposal
+- A grant writer or partner to help push this forward
+
+:::
+::::::::::::::
 
 ::: notes
 ClearRoots bridges regulatory pressure with practical tech. It empowers both sides of the supply chain with credible documentation — not token checklists. We're ready to move, and we’re aligned with real partners. What we need now is momentum and backing.
 :::
 
-## 9. Project Proposal – ClearPaper
-
-<mark>Goal:</mark> Create practical, standardized templates to help cooperatives, importers, and other actors comply with EU sustainability laws (CSRD, CSDDD, EUDR).
-
-<mark>How It Works:</mark>
-Each template would:
-- Be directly linked to specific EU legal clauses  
-- Come in Word, LaTeX, and JSON formats  
-- Adapt to national implementations and local languages  
-- Optionally integrate with tools like AgUnity for semi-automated input
-
-<mark>Why It Matters:</mark>
-- There’s no common definition of what “compliant documentation” looks like  
-- This creates risk for importers and barriers for smallholders  
-- ClearPaper provides a transparent, usable foundation for scalable compliance
-
-<mark>Current Status:</mark>
-- Begun legal mapping and validation discussions with Windesheim and SCF NICE
-
-<mark>Help Needed:</mark>
-- Collect feedback to shape a strong grant proposal  
-- Turn this into a fundable project — give us a grant writer!
-
-::: notes
-ClearPaper translates EU regulation into usable formats. It reduces ambiguity and levels the playing field. Without shared templates, even honest actors are at risk of non-compliance. This project builds trust into the documentation process.
-:::
-
 ---
 
-## 10. Key Collaborations
+## 9. Project Proposal – ClearPaper
+Examples: 
+- [VCH-ClearRoots](https://github.com/Value-Chain-Hackers/ClearPaper)
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+<mark>📄 Goal:</mark>  
+Create practical, standardized templates to help cooperatives, importers, and other actors comply with EU sustainability laws (CSRD, CSDDD, EUDR).
+
+<mark>🌍 Why It Matters:</mark>
+
+- No shared definition of “compliant documentation”
+- Uncertainty for importers
+- Exclusion of smallholders without expert support
+- ClearPaper enables trustable, scalable compliance
+
+<mark>📍 Current Status:</mark>
+
+- Legal mapping and validation discussions started with Windesheim and SCF NICE
+
+:::
+::: {.column width="50%"}
+
+<mark>🛠️ How It Works:</mark>  
+Each template would:
+
+- Link directly to relevant EU legal clauses
+- Be available in Word, LaTeX, and JSON formats
+- Adapt to national implementations and local languages
+- Optionally integrate with platforms like AgUnity
+
+<mark>🆘 Help Needed:</mark>
+
+- Collect feedback to strengthen a grant proposal
+- Support turning this into a fundable project
+- <mark>We need a grant writer</mark>
+
+:::
+::::::::::::::
+
+::: notes
+ClearPaper transforms legal ambiguity into usable tools. It empowers smallholders and de-risks compliance for importers. Without clear templates, compliance is guesswork. This project builds clarity, confidence
+:::
+---
+
+## Bi-Ronald: Automated Survey Reporting Platform
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+<mark>🎯 Purpose:</mark>  
+Streamline survey workflows by automating response collection, analysis, and personalized report generation using open-source tools on self-hosted infrastructure.
+
+<mark>🛠️ How It Works:</mark>  
+- Participants complete a multi-step survey.
+- Responses are securely stored in a local database.
+- Automated workflows generate customized reports (PDF/HTML).
+- Reports are emailed to participants.
+- Data is prepared for structured analysis via dashboards or custom analytics.
+
+:::
+::: {.column width="50%"}
+
+<mark>💡 Why It Matters:</mark>  
+- Eliminates manual data processing and report generation.
+- Ensures data privacy by avoiding external cloud services.
+- Enhances efficiency in research and educational settings.
+
+<mark>🔗 Repository:</mark>  
+- [GitHub – Bi-Ronald](https://github.com/Value-Chain-Hackers/Bi-Ronald)
+
+:::
+::::::::::::::
+
+::: notes
+Bi-Ronald offers a scalable solution for automating survey processes, providing immediate, personalized feedback to participants while maintaining data control and privacy.
+:::
+
+
+## 11. Key Collaborations
 
 - [Thomas Dik](https://www.linkedin.com/in/thomas-dik-2538392b/) – AI tooling and cloud architecture  
 - Ronald de Boer – Business Intelligence, Power BI integration  
