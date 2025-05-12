@@ -112,14 +112,6 @@ A local LLM stack enables:
 -   Running OpenWebUI-based LLM environment
 -   Hosted on a local-controlled server
 -   Integrated tools: Qdrant, n8n, pgvector, dashboards
-
-<mark>🧠 Now Possible:</mark>
-
--   Memory-enabled AI workflows
-
-More info:
-
--   VCH-Infra
 :::
 
 ::: {.column width="50%" style="font-size: 0.8em"}
@@ -173,7 +165,7 @@ A seamless environment helps students move from ideas to experiments without tec
 
 ------------------------------------------------------------------------
 
-## 3a. Reproducible Research – Infrastructure & Purpose
+## 3a. Reproducible Research
 
 ::::: columns
 ::: {.column width="50%" style="font-size: 0.8em"}
@@ -276,7 +268,7 @@ AI is overhyped. In reality:
 :::
 
 ::: {.column width="50%"}
-![Workflow](images/SupplyLens.jpeg)
+![Using A.I](images/UsingAI.png)
 :::
 :::::
 
@@ -314,7 +306,7 @@ Instead, we:
 
 ------------------------------------------------------------------------
 
-## 5b. AI-Supported Student Projects – What’s Needed
+## 5b. AI-Supported Student Projects
 
 ::::: columns
 ::: {.column width="50%"}
@@ -361,7 +353,7 @@ Map complex supply chains using AI, ESG data, and graph tech.
 -   Community and AI support
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.6em"}
 <mark>🚀 Next:</mark>
 
 -   Approval to start
@@ -374,15 +366,17 @@ Map complex supply chains using AI, ESG data, and graph tech.
 -   Spin-off status (KvK, domain)
 -   Small budget (\< €5K)
 -   Space to test with externals
+
+![Workflow](images/SupplyLens.jpeg)
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-## 7. Experimental Tool Testing – AI Scientist, Far.AI
+## 7. Experimental Tool Testing
 
 ::::: columns
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.7em"}
 <mark>🔬 Goal:</mark>\
 Explore cutting-edge AI tools for scientific workflows — like multi-step reasoning and automated research tasks.
 
@@ -396,7 +390,7 @@ Explore cutting-edge AI tools for scientific workflows — like multi-step reaso
         These tools could reshape how research is done.
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.7em"}
 <mark>🚀 Next Steps:</mark>
 
 -   Test 3 tools for research potential
@@ -422,7 +416,7 @@ Explore cutting-edge AI tools for scientific workflows — like multi-step reaso
 ## 8. Project Proposal – ClearRoots
 
 ::::: columns
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.8em"}
 <mark>🎯 Goal:</mark>\
 Support smallholders and importers in complying with EU laws (CSRD, CSDDD, EUDR).
 
@@ -432,15 +426,9 @@ Support smallholders and importers in complying with EU laws (CSRD, CSDDD, EUDR)
 -   Data stored via AgUnity blockchain
 -   Auto-generates EU-compliant documents
 -   Importers get ready-to-submit dossiers
-
-<mark>📍 Status:</mark>
-
--   System logic + pilot flow drafted
--   Partners: AgUnity, Windesheim, SCF NICE
--   First pitch deck + 1-pager ready
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.8em"}
 <mark>🌍 Why:</mark>
 
 -   Smallholders lack tools
@@ -464,7 +452,7 @@ ClearRoots fills a legal-tech gap with real partners and real field logic. It’
 ## 9. Project Proposal – ClearPaper
 
 ::::: columns
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.8em"}
 <mark>📄 Goal:</mark>\
 Create standardized templates to help actors comply with EU laws (CSRD, CSDDD, EUDR).
 
@@ -474,14 +462,9 @@ Create standardized templates to help actors comply with EU laws (CSRD, CSDDD, E
 -   Importers face uncertainty
 -   Smallholders are excluded\
     ClearPaper bridges that gap.
-
-<mark>📍 Status:</mark>
-
--   Legal mapping started (Windesheim, SCF NICE)
--   Concept aligned with ClearRoots
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.8em"}
 <mark>🛠️ How:</mark>
 
 -   Link templates to EU clauses
@@ -499,10 +482,10 @@ Create standardized templates to help actors comply with EU laws (CSRD, CSDDD, E
 
 ------------------------------------------------------------------------
 
-## Bi-Ronald: Automated Survey Reporting Platform
+## Automated Survey Reporting
 
 ::::: columns
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.6em"}
 <mark>🎯 Purpose:</mark>\
 Streamline survey workflows by automating response collection, analysis, and personalized report generation using open-source tools on self-hosted infrastructure.
 
